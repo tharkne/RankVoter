@@ -1,30 +1,25 @@
 // Top Nav bar component
-import { makeStyles, Grid, AppBar, ToolBar, MenuItem } from '@material-ui/core/styles';
+import { makeStyles, Grid, AppBar, Toolbar, MenuItem, Typography } from '@material-ui/core';
 import Proptypes from 'prop-types';
-import Typography from '@material-ui/core/Typography';
 import React from 'react';
 
 const useStyles = makeStyles(theme => ({
     root: {
-
+        backgroundColor: theme.palette.primary
     },
     title: {
-
+        color: theme.palette.primary
     }
 }));
 
 export default function Header(props){
     const classes = useStyles();
 
-    
-
     return (
-        <AppBar>
-            <ToolBar>
-                <Typography>RankVoter</Typography>
-            </ToolBar>
+        <AppBar className={classes.root}>
+            <Toolbar className={classes.bar}>
+                <Typography variant='h3'>Rank<b>Voter</b></Typography>
+            </Toolbar>
         </AppBar>
-    )
-
-    
+    )    
 }
