@@ -9,10 +9,6 @@ export default function MyApp(props) {
   const { Component, pageProps } = props;
 
   React.useEffect(() => {
-
-    // TODO: uncomment before pushing changes
-    // routeUnsupportedUsers();
-
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles) {
