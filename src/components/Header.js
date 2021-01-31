@@ -5,13 +5,16 @@ import React from 'react';
 
 const useStyles = makeStyles(theme => ({
     root: {
-
+        color: theme.palette.primary.main,
+        backgroundColor: theme.palette.primary.main
     },
     bar: {
-
+        color: theme.palette.primary.main,
+        backgroundColor: theme.palette.primary.main
     },
     title: {
-        color: theme.palette.secondary.main
+        color: theme.palette.secondary.main,
+        fontSize: '48px'
     }
 }));
 
@@ -21,7 +24,7 @@ export default function Header(props){
     return (
         <AppBar className={classes.root}>
             <Toolbar className={classes.bar}>
-                <Typography variant='h3' className={classes.title}>Rank<b>Voter</b></Typography>
+                <Typography className={classes.title}>Rank<b>Voter</b></Typography>
             </Toolbar>
         </AppBar>
     )    
