@@ -28,5 +28,5 @@ const theme = createMuiTheme({
       }
     }
 });
-  
+
 export default theme;
