@@ -19,7 +19,8 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.primary.main
     },
     menuOptions: {
-        color: theme.palette.text.dark
+        color: theme.palette.text.dark,
+        fontWeight: 'bold'
     }
 }));
 

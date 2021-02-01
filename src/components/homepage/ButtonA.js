@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.secondary.main,
         borderRadius: '20px',
 
-        boxShadow: '2px'
+        filter: 'drop-shadow(0px 3px 5px #AAAAAA)'
     },
     buttonText: {
         color: theme.palette.text.light,

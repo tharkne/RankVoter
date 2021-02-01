@@ -4,7 +4,7 @@ import { Typography, makeStyles } from '@material-ui/core'
 const useStyles = makeStyles(theme => ({
     title: {
         color: theme.palette.secondary.main,
-        fontSize: '48px'
+        fontSize: '44px'
     }
 }));
 
