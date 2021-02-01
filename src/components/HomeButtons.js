@@ -11,5 +11,8 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function HomeButtons(props){
-    <Typography>HomeButtons</Typography>
+    const classes = useStyles();
+    <Grid container className={classes.root}>
+        <Typography>HomeButtons</Typography>
+    </Grid>
 }
