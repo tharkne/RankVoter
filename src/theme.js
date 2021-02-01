@@ -20,7 +20,7 @@ const Roboto = [{
 const theme = createMuiTheme({
     palette: {
       primary: {
-        main: '#FFFFFF'
+        main: '#FEFBF8'
       },
       secondary: { 
         main: '#FF370B',
@@ -28,7 +28,7 @@ const theme = createMuiTheme({
       },
       text: {
         dark: '#000000',
-        light: '#FFFFFF'
+        light: '#FEFBF8'
       }
     }
 });
