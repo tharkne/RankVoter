@@ -1,11 +1,14 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Layout from '../src/components/layout/Layout'
 
-export default function About() {
+export default function Create(props) {
     return (
         <Layout>
-            <div>About</div>
+            <div>Create a Poll</div>
         </Layout>
-    )   
+    )
 }
+
+
