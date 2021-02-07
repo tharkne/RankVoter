@@ -36,7 +36,7 @@ export default function Header(props){
         <AppBar className={classes.root}>
             <Toolbar className={classes.bar}>
                 <Grid container alignItems='center'>
-                    <LogoText flex={1} />
+                    <LogoText flex={1} handleLinkClick={handleLinkClick}/>
                     <MenuItem className={classes.menuOptions} onClick={() => handleLinkClick('/create')}>Create a Poll</MenuItem>
                     <MenuItem className={classes.menuOptions} onClick={() => handleLinkClick('/polls')}>Find a Poll</MenuItem>
                     <MenuItem className={classes.menuOptions} onClick={() => handleLinkClick('/about')}>About</MenuItem>
