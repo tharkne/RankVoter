@@ -30,6 +30,9 @@ const theme = createMuiTheme({
         dark: '#4F4F4F',
         light: '#FEFBF8'
       },
+      background: {
+
+      },
       colors: {
         first: '#FF9781', // salmon
         second: '#B3B9FB', // blue

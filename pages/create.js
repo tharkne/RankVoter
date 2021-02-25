@@ -5,7 +5,7 @@ import Layout from '../src/components/layout/Layout'
 
 import { makeStyles } from '@material-ui/core/styles'
 
-import { Name, VotingSystem, Choices, AdditionalOptions } from '../src/components/pollCreator'
+import { PollName, VotingSystem, Choices, AdditionalOptions } from '../src/components/pollCreator'
 
 const useStyles = makeStyles(theme => ({
 
@@ -13,20 +13,35 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const pageEnum = {
-    NAME: 0,
+    POLL_NAME: 0,
     VOTE_SYSTEM: 1,
     POLL_CHOICES: 2,
-    ADDL_OPTIONS: 3
+    ADDL_OPTIONS: 3,
+    CONFIRMATION: 4
 }
 
 export default function Create(props) {
     const classes = useStyles();
 
-    const [page, setPage] = useState(0);
+    const [pageNum, setPageNum] = useState(0);
+
+
+    const handleButtonClick = (button) => { 
+        switch(button){
+            case 'prev':
+                pageNum -= 1;
+                break;
+            case 'next':
+                pageNum += 1;
+                break;
+            default:
+                break;
+        }
+    }
 
     switch(page){
-        case(pageEnum.NAME):
-            return (<Name />)
+        case(pageEnum.POLL_NAME):
+            return (<PollName />)
         case(pageEnum.VOTE_SYSTEM):
             return (<VotingSystem />)
         case(pageEnum.POLL_CHOICES):
